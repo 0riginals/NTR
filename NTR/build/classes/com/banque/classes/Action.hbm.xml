@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.banque.classes.Action" table="actions">
+	<id name="id" type="int" column="id_action"></id>
+	<property name="userId" type="int" not-null="true" column="id_user"></property>
+	<property name="seller" type="string" not-null="false"></property>
+	<property name="description" type="string" not-null="false"></property>
+	<property name="price" type="double" not-null="false"></property>
+	</class>
+</hibernate-mapping>
